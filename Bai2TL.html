@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+#menu {
+ position: fixed;
+ height: 50%;
+ background-color: #000000;
+ width: 150px;
+ left: 0;
+}
+#menu ul {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+}
+#menu ul li {
+ line-height: 50px;
+ height: auto;
+ position: relative; 
+}
+#menu li a {
+ display: block;
+ color: #fff;
+ padding: 0 1em;
+ border-bottom: 3px solid #fff; 
+ text-decoration: none;
+}
+#menu li:hover {
+ background-color: #454545;
+}
+
+#menu ul li .sub-menu1{
+	display:none;
+	position:absolute; 
+    top: 0px;
+    left: 150px;
+}
+
+#menu ul li:hover .sub-menu1{
+	display:block;
+}
+
+#menu ul li ul.sub-menu1 li a {
+    background-color:#808080;
+    color:#fff;
+    width: 150px;
+    }
+
+/**/
+#menu ul li ul.sub-menu1 li > .sub-menu2 {
+    display:none;
+	position:absolute; 
+    top: 0px;
+    left: 180px;
+    }
+#menu ul li ul.sub-menu1 li:hover .sub-menu2 {
+    display:block;
+    }
+	</style>
+</head>
+
+<body>
+<div id="menu">
+  <ul>
+    <li><a href="#">Trang chủ</a></li>
+    <li>
+    	<a href="#">Diễn đàn</a>
+        <ul class="sub-menu1">
+            <li>
+                <a href="#">Sinh viên Hufi</a>
+
+            </li>
+            <li>
+                <a href="#">Sinh viên CNTT</a>
+                <ul class="sub-menu2">
+                    <li><a href="#">Khóa 09DHTH</a></li>
+                    <li><a href="#">Khóa 10DHTH</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Tin tức</a>
+        <ul class="sub-menu1">
+          <li><a href="#">Học vụ</a></li>
+          <li><a href="#">Điểm rèn luyện</a></li>
+          <li><a href="#">Đoàn thể</a></li>
+          <li><a href="#">Sinh hoạt ngoại khóa</a></li>
+        </ul>
+    </li>   
+    <li><a href="#">Hỏi đáp</a></li>
+    <li><a href="#">Liên hệ</a></li>
+  </ul>
+</div>
+</body>
+</html>
